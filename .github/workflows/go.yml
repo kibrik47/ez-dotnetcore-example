@@ -38,6 +38,6 @@ jobs:
 
     - name: Push Docker Image to docker Hub
       run: |
-        echo ${{ secrets.DOCKERHUB_TOKEN }} | docker login -u your-docker-username --password-stdin
+        echo ${{ secrets.DOCKERHUB_TOKEN }} | docker login -u kibrik47 --password-stdin
         docker push your-docker-username/your-repo-name:latest
 
