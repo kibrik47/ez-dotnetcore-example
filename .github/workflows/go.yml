@@ -26,3 +26,8 @@ jobs:
 
     - name: Test
       run: go test -v ./...
+
+    - name: golintr
+      uses: norwd/golintr@v2.1.0
+      with:
+        path: ./...
